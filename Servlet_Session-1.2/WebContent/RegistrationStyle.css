@@ -1,0 +1,31 @@
+@CHARSET "ISO-8859-1";
+/* set attribute of section*/
+section {
+	margin: 0 auto;
+	width: 85%;
+	height: 750px;
+}
+
+/* set color of '*' */
+.span {
+	color: red;
+}
+
+/*set the attributes of header*/
+h1 {
+	width: 100%;
+	text-align: center;
+}
+
+/*set attributes of table*/
+table {
+	margin-top: 50px;
+	border: 1px solid black;
+	margin-left: 30%;
+	margin-right: 35%;
+}
+
+/*set attributes of cell(column) in a table*/
+td {
+	width: 100%;
+}

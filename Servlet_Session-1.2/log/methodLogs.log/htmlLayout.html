@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>HTML Layout Example</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Oct 07 23:34:57 IST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>2018-10-07-23:35:26.38+0530</td>
+<td title="http-nio-8080-exec-6 thread">http-nio-8080-exec-6</td>
+<td title="Level">INFO</td>
+<td title="javax.servlet.http.HttpServlet category">javax.servlet.http.HttpServlet</td>
+<td>Validation.java:35</td>
+<td title="Message">Http get request</td>
+</tr>
+
+<tr>
+<td>2018-10-07-23:35:26.51+0530</td>
+<td title="http-nio-8080-exec-6 thread">http-nio-8080-exec-6</td>
+<td title="Level">INFO</td>
+<td title="javax.servlet.http.HttpServlet category">javax.servlet.http.HttpServlet</td>
+<td>Validation.java:39</td>
+<td title="Message">Get form data using request</td>
+</tr>
+
+<tr>
+<td>2018-10-07-23:35:26.52+0530</td>
+<td title="http-nio-8080-exec-6 thread">http-nio-8080-exec-6</td>
+<td title="Level">INFO</td>
+<td title="javax.servlet.http.HttpServlet category">javax.servlet.http.HttpServlet</td>
+<td>Validation.java:52</td>
+<td title="Message">Form validation is started</td>
+</tr>
+
+<tr>
+<td>2018-10-07-23:35:26.53+0530</td>
+<td title="http-nio-8080-exec-6 thread">http-nio-8080-exec-6</td>
+<td title="Level">INFO</td>
+<td title="javax.servlet.http.HttpServlet category">javax.servlet.http.HttpServlet</td>
+<td>Validation.java:95</td>
+<td title="Message">Validation succeed</td>
+</tr>
+
+<tr>
+<td>2018-10-07-23:35:26.53+0530</td>
+<td title="http-nio-8080-exec-6 thread">http-nio-8080-exec-6</td>
+<td title="Level">INFO</td>
+<td title="javax.servlet.http.HttpServlet category">javax.servlet.http.HttpServlet</td>
+<td>Validation.java:96</td>
+<td title="Message">Set response atttributes</td>
+</tr>
+
+<tr>
+<td>2018-10-07-23:35:26.56+0530</td>
+<td title="http-nio-8080-exec-6 thread">http-nio-8080-exec-6</td>
+<td title="Level">INFO</td>
+<td title="javax.servlet.http.HttpServlet category">javax.servlet.http.HttpServlet</td>
+<td>Validation.java:99</td>
+<td title="Message">Sending Response to webpage</td>
+</tr>
+
+<tr>
+<td>2018-10-07-23:36:41.893+0530</td>
+<td title="http-nio-8080-exec-4 thread">http-nio-8080-exec-4</td>
+<td title="Level">INFO</td>
+<td title="javax.servlet.http.HttpServlet category">javax.servlet.http.HttpServlet</td>
+<td>Validation.java:35</td>
+<td title="Message">Http get request</td>
+</tr>
+
+<tr>
+<td>2018-10-07-23:36:41.895+0530</td>
+<td title="http-nio-8080-exec-4 thread">http-nio-8080-exec-4</td>
+<td title="Level">INFO</td>
+<td title="javax.servlet.http.HttpServlet category">javax.servlet.http.HttpServlet</td>
+<td>Validation.java:39</td>
+<td title="Message">Get form data using request</td>
+</tr>
+
+<tr>
+<td>2018-10-07-23:36:41.896+0530</td>
+<td title="http-nio-8080-exec-4 thread">http-nio-8080-exec-4</td>
+<td title="Level">INFO</td>
+<td title="javax.servlet.http.HttpServlet category">javax.servlet.http.HttpServlet</td>
+<td>Validation.java:52</td>
+<td title="Message">Form validation is started</td>
+</tr>
+
+<tr>
+<td>2018-10-07-23:36:41.900+0530</td>
+<td title="http-nio-8080-exec-4 thread">http-nio-8080-exec-4</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="javax.servlet.http.HttpServlet category">javax.servlet.http.HttpServlet</td>
+<td>Validation.java:103</td>
+<td title="Message">An exception! Oops!</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.Exception: invlid first name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.servlets.Validation.doGet(Validation.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Thread.run(Thread.java:813)
+</td></tr>

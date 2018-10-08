@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <appender name="FILE" class="org.apache.log4j.FileAppender">
+        <param name="File" value="D:/Servlet_Session-1/Servlet_Session-1/Servlet_Session-1.2/log/methodLogs.log/htmlLayout.html"/>
+        <layout class="com.servlets.customlog4j">
+            <param name="ConversionPattern" value="%-7p %d [%t] %c %x - %m%n"/>
+            <param name="LocationInfo" value="true"/>
+            <param name="Title" value="HTML Layout Example"/>
+        </layout>
+    </appender>
+    <appender name="FILE1" class="org.apache.log4j.FileAppender">
+        <param name="File" value="D:/Servlet_Session-1/Servlet_Session-1/Servlet_Session-1.2/log/methodLogs.log/logging.log"/>
+        <layout class="com.servlets.customlog4j">
+            <param name="ConversionPattern" value="%-7p %d [%t] %c %x - %m%n"/>
+            <param name="LocationInfo" value="true"/>
+            <param name="Title" value="HTML Layout Example"/>
+        </layout>
+    </appender>
+     <appender name="LOGSTASH" class="org.apache.log4j.net.SocketAppender">
+	    <param name="RemoteHost" value=" 127.0.0.1" />
+	    <param name="ReconnectionDelay" value="60000" />
+	    <param name="Threshold" value="DEBUG" />
+	</appender>
+    <root>
+        <level value="DEBUG"/>
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="FILE1"/>
+        <appender-ref ref="SERVER"/>  
+        <appender-ref ref="LOGSTASH"/>
+    </root>
+</log4j:configuration>
